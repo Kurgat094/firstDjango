@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="">
+    {% csrf_token %}
+     Result={{result}}
+     <p>go back <a href="{% url 'Home' %}">home</a></p>
+</form>
+{% endblock %}
